@@ -41,11 +41,15 @@ Build Eureka-Client(user-service)
 7. enable config properties
 
 
-    spring.cloud.config.label=master
-    spring.cloud.config.profile=dev
-    spring.cloud.config.discovery.service-id=config-server
-    
-    endpoints.restart.enabled=true
-    management.security.enabled=false
+       add below code to application.properties
+       
+       endpoints.restart.enabled=true
+       management.security.enabled=false
+       
+       create bootstrap.properties and add the below code
+       
+       spring.cloud.config.label=master
+       spring.cloud.config.profile=dev
+       spring.cloud.config.discovery.service-id=config-server
     
     
