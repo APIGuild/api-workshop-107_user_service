@@ -38,7 +38,7 @@ Build Eureka-Client(user-service)
 
 	compile('org.springframework.cloud:spring-cloud-starter-config')
 
-7. enable config properties
+7. enable config properties (application.properties)
 
 
        add below code to application.properties
@@ -46,7 +46,8 @@ Build Eureka-Client(user-service)
        endpoints.restart.enabled=true
        management.security.enabled=false
        
-       create bootstrap.properties and add the below code
+8. set config server and branch and profile (bootstrap.properties)
+       
        
        spring.cloud.config.label=master
        spring.cloud.config.profile=dev
